@@ -399,7 +399,7 @@ public class PasscodeActivity extends Activity {
                     done();
                 }
             } else {
-                logoutButton.setVisibility(View.VISIBLE);
+                logoutButton.setVisibility(View.INVISIBLE);
                 int attempts = passcodeManager.addFailedPasscodeAttempt();
                 passcodeField.setText("");
                 int maxAttempts = getMaxPasscodeAttempts();
